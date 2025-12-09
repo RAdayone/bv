@@ -29,10 +29,10 @@ android {
                 load(FileInputStream(signingProp))
             }
             create("key") {
-                storeFile = rootProject.file(properties.getProperty("keystore.path"))
-                storePassword = properties.getProperty("keystore.pwd")
-                keyAlias = properties.getProperty("keystore.alias")
-                keyPassword = properties.getProperty("keystore.alias_pwd")
+                storeFile = rootProject.file(properties.getProperty("storeFile"))
+                storePassword = properties.getProperty("storePassword")
+                keyAlias = properties.getProperty("keyAlias")
+                keyPassword = properties.getProperty("keyPassword")
             }
         }
     }
